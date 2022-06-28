@@ -1,0 +1,20 @@
+{
+  "name": "design-system-icons",
+  "version": "1.0.0",
+  "description": "A collection of icons og logo image files for use in SDFI branded applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SDFIdk/design-system-icons.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SDFIdk/design-system-icons/issues"
+  },
+  "homepage": "https://github.com/SDFIdk/design-system-icons#readme"
+}
