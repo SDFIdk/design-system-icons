@@ -1,6 +1,6 @@
 {
   "name": "design-system-icons",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A collection of icons og logo image files for use in SDFI branded applications.",
   "main": "index.js",
   "scripts": {
