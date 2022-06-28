@@ -10,9 +10,55 @@
     <!-- Here is how to add the favicon -->
     <link rel="icon" href="./logos/logo-simple-micro.svg">
 
-    <link rel="stylesheet" href="assets/designsystem.css">
+    <link rel="stylesheet" href="./node_modules/design-system-css/assets/designsystem.css">
 
     <style>
+      .icon-list {
+        list-style: none; 
+        margin: 0; 
+        padding: 0; 
+        display: flex; 
+        flex-flow: row wrap; 
+        gap: 2rem;
+      }
+
+      .icon-list li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: .5rem;
+        justify-content: flex-start;
+        width: 15rem;
+      }
+
+      .icon-list li p {
+        margin: 0;
+        padding: 0;
+      }
+
+      .icon-list li code {
+        font-size: smaller;
+        max-width: 10rem;
+      }
+
+      #favicon p,
+      .icon-list {
+        background-color: var(--lys-steel);
+        border-radius: .25rem;
+        padding: 2rem;
+      }
+
+      nav,
+      #logo,
+      #icons,
+      #favicon {
+        margin-bottom: 2rem;
+      }
+
+
       /* Custom CSS for this page*/
 
       .ds-icon {
@@ -20,12 +66,14 @@
         height: 2rem;
       }
 
-      .ds-logo-container {
+      .ds-logo-container,
+      .ds-logo-micro-container {
         height: auto;
         width: auto;
         display: flex;
         flex-flow: row nowrap;
-        padding: 1rem;
+        padding: 1rem 1rem 1rem 0;
+        font-family: "Roboto", sans-serif;
       }
       .ds-logo-container img {
         height: auto;
@@ -33,16 +81,43 @@
       }
       .ds-logo-container p {
         padding: 0;
-        margin: 1.75rem 0 0 1rem;
+        margin: 1.85rem 0 0 1rem;
       }
-      .ds-logo-container span {
-        font: 1rem/1.2 "Roboto", sans-serif;
-        font-weight: 400;
-      }
-      .ds-logo-container span:first-child {
-        font-size: 0.8rem;
+       
+      .ds-logo-container *:first-child {
+        font-size: 0.875rem;
         text-transform: uppercase;
         font-weight: 700;
+        letter-spacing: 0.03rem;
+        line-height: 1.2;
+      }
+      .ds-logo-container *:last-child {
+        font-weight: 300;
+        line-height: 1.2;
+        font-size: 1rem;
+      }
+
+      .ds-logo-micro-container p {
+        margin: .75rem 0 0 .75rem;
+      }
+
+      .ds-logo-micro-container img {
+        height: auto;
+        width: 1.5rem;
+      }
+
+      .ds-logo-micro-container *:first-child {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.06rem;
+        line-height: 0.875;
+      }
+
+      .ds-logo-micro-container *:last-child {
+        font-weight: 400;
+        line-height: 1;
+        font-size: 0.75rem;
       }
    
     </style>
@@ -52,7 +127,7 @@
 
     <header class="container" style="margin-bottom: 2rem;">
 
-      <div class="ds-logo-container">
+      <div class="ds-logo-container" style="margin-left: -2.35rem;">
         <img src="./logos/logo.svg" alt="">
         <p>
           <span>Dataforsyningen</span><br>
@@ -86,13 +161,21 @@
           </p>
         </div>
 
+        <div class="ds-logo-micro-container">
+          <img src="./logos/logo-micro.svg" alt="">
+          <p>
+            <span>Dataforsyningen</span><br>
+            <small>Styrelsen for Dataforsyning og Infrastruktur</small>
+          </p>
+        </div>
+
       </section>
 
       <section id="icons">
 
         <h2>Ikoner</h2>
 
-        <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-flow: row wrap; gap: 1rem;">
+        <ul class="icon-list">
           <li><img class="ds-icon" src="icons/hentdata_icon_choose.svg" alt=""><p>hentdata_icon_choose.svg</p><code>&lt;img src="icons/hentdata_icon_choose.svg" alt=""></code></li>
           <li><img class="ds-icon" src="icons/hentdata_icon_download.svg" alt=""><p>hentdata_icon_download.svg</p><code>&lt;img src="icons/hentdata_icon_download.svg" alt=""></code></li>
           <li><img class="ds-icon" src="icons/hentdata_icon_exitsite.svg" alt=""><p>hentdata_icon_exitsite.svg</p><code>&lt;img src="icons/hentdata_icon_exitsite.svg" alt=""></code></li>
@@ -169,7 +252,13 @@
 
         <h2>Favicon/bogmærke-ikoner</h2>
 
-        <img src="./logos/logo-simple-micro.svg" alt="">
+        <p>
+          <img src="./logos/logo-simple-micro.svg" alt="" style="margin-right: 1rem;">
+          <code>
+            &lt;link rel="icon" href="logos/logo-simple-micro.svg">
+          </code>
+        </p>
+        
 
       </section>
     </main>

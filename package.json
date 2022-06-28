@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/SDFIdk/design-system-icons/issues"
   },
-  "homepage": "https://github.com/SDFIdk/design-system-icons#readme"
+  "homepage": "https://github.com/SDFIdk/design-system-icons#readme",
+  "dependencies": {
+    "design-system-css": "github:SDFIdk/design-system-css"
+  }
 }
