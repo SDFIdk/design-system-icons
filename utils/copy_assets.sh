@@ -2,7 +2,27 @@
 
 # Copies files to a given location
 
-echo "Copying files to /assets/icons"
-mkdir assets/icons
-cp icons/*.svg assets/icons
+echo "Copying icon and logo SVGs to /assets/icons and /assets/logos"
 
+if ! [ -d "$( pwd; )/assets" ]
+then
+  mkdir $( pwd; )/assets
+
+  if ! [ -d "$( pwd; )/assets/icons" ]
+  then
+    mkdir $( pwd; )/assets/icons
+  fi
+
+fi
+
+cp $( dirname -- "${BASH_SOURCE[1]}" )/icons/*.svg $( pwd; )/assets/icons/
+
+if ! [ -d "$( pwd; )/assets/logos" ]
+then
+  mkdir $( pwd; )/assets/logos
+fi
+
+
+cp $( dirname -- "${BASH_SOURCE[1]}" )/logos/*.svg $( pwd; )/assets/logos/
+
+echo "Done copying"

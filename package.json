@@ -4,6 +4,7 @@
   "description": "A collection of icons og logo image files for use in SDFI branded applications.",
   "main": "index.js",
   "scripts": {
+    "install": "utils/copy_assets.sh && echo 'Icon and logo files copied to /assets/ directory' && exit 0",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
