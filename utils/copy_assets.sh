@@ -2,27 +2,29 @@
 
 # Copies files to a given location
 
-echo "Copying icon and logo SVGs to /assets/icons and /assets/logos"
+echo "Copying icon and logo SVGs to /assets/icons and /assets/logos to $INIT_CWD/assets"
 
-if ! [ -d "$( pwd; )/../../assets" ]
+cd $INIT_CWD
+
+if ! [ -d "assets" ]
 then
-  mkdir $( pwd; )/../../assets
+  mkdir assets
 
-  if ! [ -d "$( pwd; )/../../assets/icons" ]
+  if ! [ -d "assets/icons" ]
   then
-    mkdir $( pwd; )/../../assets/icons
+    mkdir assets/icons
   fi
 
 fi
 
-cp $( pwd; )/icons/*.svg $( pwd; )/../../assets/icons/
+cp $( pwd; )/icons/*.svg assets/icons/
 
-if ! [ -d "$( pwd; )/../../assets/logos" ]
+if ! [ -d "assets/logos" ]
 then
-  mkdir $( pwd; )/../../assets/logos
+  mkdir assets/logos
 fi
 
 
-cp $( pwd; )/logos/*.svg $( pwd; )/../../assets/logos/
+cp $( pwd; )/logos/*.svg cd assets/logos/
 
 echo "Done copying"
