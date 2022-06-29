@@ -1,32 +1,27 @@
 #!/usr/bin/env bash
 
-# Copies files to a given location
+# Copies files
 
-echo "Copying icon and logo SVGs to $INIT_CWD/assets"
+echo "Copying icon and logo SVGs to $INIT_CWD/assets + $( pwd )"
 
-$IMG_DIR=pwd
-
-cd $INIT_CWD
-
-if ! [ -d "assets" ]
+if ! [ -d "$INIT_CWD/assets" ]
 then
-  mkdir assets
+  mkdir $INIT_CWD/assets
 
-  if ! [ -d "assets/icons" ]
+  if ! [ -d "$INIT_CWD/assets/icons" ]
   then
-    mkdir assets/icons
+    mkdir $INIT_CWD/assets/icons
   fi
 
 fi
 
-cp $IMG_DIR/icons/*.svg assets/icons/
+cp $( pwd )/icons/*.svg $INIT_CWD/assets/icons/
 
-if ! [ -d "assets/logos" ]
+if ! [ -d "$INIT_CWD/assets/logos" ]
 then
-  mkdir assets/logos
+  mkdir $INIT_CWD/assets/logos
 fi
 
-
-cp $IMG_DIR/logos/*.svg cd assets/logos/
+cp $( pwd )/logos/*.svg $INIT_CWD/assets/logos/
 
 echo "Done copying"
