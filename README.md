@@ -10,6 +10,6 @@ Check out the example implementations in [example.html](example.html).
 
 1. Fetch icon and logo fils using NPM
    ```
-   npm install --save https://github.com/SDFIdk/design-system-icons.git
+   npm install https://github.com/SDFIdk/design-system-icons.git
    ```
-2. SVG files should be available in `assets` directory
+2. SVG files should now be available in `assets` directory
