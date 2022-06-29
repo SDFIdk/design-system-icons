@@ -2,7 +2,9 @@
 
 # Copies files to a given location
 
-echo "Copying icon and logo SVGs to /assets/icons and /assets/logos to $INIT_CWD/assets"
+echo "Copying icon and logo SVGs to $INIT_CWD/assets"
+
+$IMG_DIR=pwd
 
 cd $INIT_CWD
 
@@ -17,7 +19,7 @@ then
 
 fi
 
-cp $( pwd; )/icons/*.svg assets/icons/
+cp $IMG_DIR/icons/*.svg assets/icons/
 
 if ! [ -d "assets/logos" ]
 then
@@ -25,6 +27,6 @@ then
 fi
 
 
-cp $( pwd; )/logos/*.svg cd assets/logos/
+cp $IMG_DIR/logos/*.svg cd assets/logos/
 
 echo "Done copying"
