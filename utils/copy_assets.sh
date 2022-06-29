@@ -15,7 +15,7 @@ then
 
 fi
 
-cp $( pwd; )/icons/*.svg $( pwd; )/assets/icons/
+cp $( pwd; )/icons/*.svg $( pwd; )/../../assets/icons/
 
 if ! [ -d "$( pwd; )/../../assets/logos" ]
 then
