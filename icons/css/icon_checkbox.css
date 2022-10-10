@@ -1,0 +1,8 @@
+
+    :root {
+      --icon_checkbox: url('data:image/svg+xml;utf8,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%0A%3Cpath%20d%3D%22M16.5%205H6.5C5.67157%205%205%205.67157%205%206.5V17.5C5%2018.3284%205.67157%2019%206.5%2019H17.5C18.3284%2019%2019%2018.3284%2019%2017.5V12%22%20stroke%3D%22black%22%2F%3E%0A%3Cpath%20d%3D%22M20%206L11.9815%2015.2315L8%2012.0463%22%20stroke%3D%22black%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3C%2Fsvg%3E%0A');
+    }
+    .ds-icon-icon_checkbox::before { 
+      background-image: var(--icon_checkbox);
+    }
+  
