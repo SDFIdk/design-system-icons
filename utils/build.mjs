@@ -51,7 +51,7 @@ async function generateContent() {
 }
 
 async function buildHTMLsnippet(filename, svg) {
-  const shortname = filename.replace('.svg', '').replace('_', '-')
+  const shortname = filename.replace('.svg', '').replaceAll('_', '-')
   const html = `
   <article id="${ shortname }" class="icon-details">
     <h2>
@@ -76,7 +76,7 @@ async function buildHTMLsnippet(filename, svg) {
 }
 
 async function buildTOCsnippet(filename, svg) {
-  const shortname = filename.replace('.svg', '').replace('_', '-')
+  const shortname = filename.replace('.svg', '').replaceAll('_', '-')
   const html = `
     <a href="#${ shortname }">${ svg }</a>
   `
@@ -84,7 +84,7 @@ async function buildTOCsnippet(filename, svg) {
 }
 
 async function writeCSSsnippet(filename, svg) {
-  const shortname = filename.replace('.svg', '').replace('_', '-')
+  const shortname = filename.replace('.svg', '').replaceAll('_', '-')
   const escaped_svg = encodeURIComponent(svg.replace(/(\r\n)+/gi, ''))
   const css = `
     :root {
@@ -96,7 +96,7 @@ async function writeCSSsnippet(filename, svg) {
   `
   let filehandle
   try {
-    filehandle = await open(`./icons/css/${ filename.replace('.svg', '.css').replace('_', '-') }`, 'w')
+    filehandle = await open(`./icons/css/${ filename.replace('.svg', '.css').replaceAll('_', '-') }`, 'w')
     filehandle.writeFile(css, 'utf8')
   } catch (error) {
     console.error('there was an error:', error.message)
