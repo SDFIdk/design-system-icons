@@ -147,7 +147,9 @@ let icon_content = await generateContent('./icons/svg')
 let logo_content = await generateContent('./logos/svg')
 
 markup += await readHTML('./utils/docs-src/header.html')
+markup += '<h2>Ikoner</h2>'
 markup += icon_content[1]
+markup += '<h2>Logo</h2>'
 markup += logo_content[1]
 markup += await readHTML('./utils/docs-src/instructions.html')
 markup += icon_content[0]
