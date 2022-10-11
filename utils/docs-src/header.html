@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="da" data-theme="light">
+  
+<head>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=yes">
+  
+  <title>Design system ikoner og logoer</title>
+  
+  <!-- Here is how to add the favicon -->
+  <link rel="icon" href="./logos/logo-simple-micro.svg">
+
+  <link rel="stylesheet" href="./css/designsystem.css">
+
+  <style>
+    html,
+    body {
+      width: auto;
+    }
+    nav {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      gap: 2rem;
+    }
+    nav > a {
+      flex: 0 0 2rem;
+      text-align: center;
+    }
+    nav > a > svg {
+      width: 2rem;
+      height: 2rem;
+    }
+    article {
+      margin: 3rem 0;
+      padding-top: var(--spacing);
+    }
+    .icon-details > h2 {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+    }
+    .display-svg {
+      border: solid 1px var(--medium-steel);
+      border-radius: 2.5rem;
+      height: 4.5rem;
+      width: 4.5rem;
+      margin-right: var(--spacing);
+      margin-left: -1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    code {
+      padding: 1.5rem 1rem;
+      background-color: var(--lys-steel);
+      display: block;
+      max-width: 100%;
+      overflow: auto;
+    }
+    .display-svg > svg {
+      height: auto;
+      width: 3rem;
+    }
+
+    #logo-normal-hvid .display-svg,
+    a[href="#logo-normal-hvid"] {
+      background-color: var(--mork-tyrkis);
+    }
+    a[href="#logo-normal-hvid"] {
+      
+    }
+  </style>
+
+</head>
+<body class="ds-margin" id="content-top">
+  <h1>Design system icons</h1>
