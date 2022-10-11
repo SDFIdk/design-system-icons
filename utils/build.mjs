@@ -16,17 +16,17 @@ async function readHTML(path) {
   }
 }
 
-async function generateContent() {
+async function generateContent(svg_dir) {
   let filehandle
   let html = ''
   let toc = '<nav>'
   let index_css = ''
   try {
-    const files = await readdir('./icons/svg')
+    const files = await readdir(svg_dir)
     for (const file of files) {
 
       try {
-        filehandle = await open(`./icons/svg/${ file }`, 'r+')
+        filehandle = await open(`${ svg_dir }/${ file }`, 'r+')
         filehandle.readFile('utf8').then(async function(svg) {
 
           // This is where the magic happens
@@ -60,7 +60,7 @@ async function buildHTMLsnippet(filename, svg) {
     <div class="icon-container">  
       <div>
         <h3 class="h5">CSS</h3>
-        <pre><code>@import "${ shortname }.css"</code></pre>
+        <pre><code>@import "design-system-icons/css/${ shortname }.css";</code></pre>
         <p>Brug i HTML:</p>
         <pre><code>&lt;span class="ds-${ shortname }">&lt;/span></code></pre>
         <p>CSS custom property:</p>
@@ -96,7 +96,7 @@ async function writeCSSsnippet(filename, svg) {
   `
   let filehandle
   try {
-    filehandle = await open(`./icons/css/${ filename.replace('.svg', '.css').replaceAll('_', '-') }`, 'w')
+    filehandle = await open(`./css/${ filename.replace('.svg', '.css').replaceAll('_', '-') }`, 'w')
     filehandle.writeFile(css, 'utf8')
   } catch (error) {
     console.error('there was an error:', error.message)
@@ -107,7 +107,7 @@ async function writeCSSsnippet(filename, svg) {
 
 function addCSStoIndex(filename) {
   return `
-@import "icons/css/${ filename }";
+@import "./css/${ filename }";
   `
 }
 
@@ -139,22 +139,26 @@ async function writeIndexCSS(css) {
   }
 }
 
-console.log('Building documentation and rebuildning CSS')
+console.log('Building documentation and rebuilding CSS')
 
 // Build HTML
 let markup = ''
-let content = await generateContent()
+let icon_content = await generateContent('./icons/svg')
+let logo_content = await generateContent('./logos/svg')
 
 markup += await readHTML('./utils/docs-src/header.html')
-markup += content[1]
+markup += icon_content[1]
+markup += logo_content[1]
 markup += await readHTML('./utils/docs-src/instructions.html')
-markup += content[0]
+markup += icon_content[0]
+markup += logo_content[0]
 markup += await readHTML('./utils/docs-src/footer.html')
 
 // Write HTML file
 await writeHTML(markup)
 
 // Write new index CSS file
-await writeIndexCSS(content[2])
+const index_css = icon_content[2] + logo_content[2]
+await writeIndexCSS(index_css)
 
 console.log('Done 👍')
