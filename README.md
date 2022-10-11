@@ -14,7 +14,7 @@ Check out the example implementations in [docs/index.html](docs/index.html).
    ```
 2. Refer to the documentation on how to import and use icon CSS.
    You can build the documentation locally by running:
-   ´´´
+   ```
    npm run build
-   ´´´
+   ```
    ... and looking it up in [docs/index.html](docs/index.html)
