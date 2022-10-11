@@ -51,7 +51,7 @@ async function generateContent() {
 }
 
 async function buildHTMLsnippet(filename, svg) {
-  const shortname = filename.replace('.svg', '')
+  const shortname = filename.replace('.svg', '').replace('_', '-')
   const html = `
   <article id="${ shortname }" class="icon-details">
     <h2>
@@ -62,9 +62,9 @@ async function buildHTMLsnippet(filename, svg) {
         <h3 class="h5">CSS</h3>
         <pre><code>@import "${ shortname }.css"</code></pre>
         <p>Brug i HTML:</p>
-        <pre><code>&lt;span class="ds-icon-${ shortname }">&lt;/span></code></pre>
+        <pre><code>&lt;span class="ds-${ shortname }">&lt;/span></code></pre>
         <p>CSS custom property:</p>
-        <pre><code>var(--hentdata_icon_choose)</code></pre>
+        <pre><code>--ds-${ shortname }</code></pre>
         <h3 class="h5">SVG</h3>
         <pre><code>${ svg.replaceAll('<', '&lt;') }</code></pre>
       </div>
@@ -76,7 +76,7 @@ async function buildHTMLsnippet(filename, svg) {
 }
 
 async function buildTOCsnippet(filename, svg) {
-  const shortname = filename.replace('.svg', '')
+  const shortname = filename.replace('.svg', '').replace('_', '-')
   const html = `
     <a href="#${ shortname }">${ svg }</a>
   `
@@ -84,19 +84,19 @@ async function buildTOCsnippet(filename, svg) {
 }
 
 async function writeCSSsnippet(filename, svg) {
-  const shortname = filename.replace('.svg', '')
+  const shortname = filename.replace('.svg', '').replace('_', '-')
   const escaped_svg = encodeURIComponent(svg.replace(/(\r\n)+/gi, ''))
   const css = `
     :root {
-      --${ shortname }: url('data:image/svg+xml;utf8,${ escaped_svg }');
+      --ds-${ shortname }: url('data:image/svg+xml;utf8,${ escaped_svg }');
     }
-    .ds-icon-${ shortname }::before { 
-      background-image: var(--${ shortname });
+    .ds-${ shortname }::before {
+      background-image: var(--ds-${ shortname });
     }
   `
   let filehandle
   try {
-    filehandle = await open(`./icons/css/${ filename.replace('.svg', '.css') }`, 'w')
+    filehandle = await open(`./icons/css/${ filename.replace('.svg', '.css').replace('_', '-') }`, 'w')
     filehandle.writeFile(css, 'utf8')
   } catch (error) {
     console.error('there was an error:', error.message)

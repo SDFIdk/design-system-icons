@@ -1,8 +1,0 @@
-
-    :root {
-      --icon_stack: url('data:image/svg+xml;utf8,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%0A%3Cpath%20d%3D%22M6%2015L12%2018L18%2015M6%2012L12%2015L18%2012M12%206L6%209L12%2012L18%209L12%206Z%22%20stroke%3D%22black%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3C%2Fsvg%3E%0A');
-    }
-    .ds-icon-icon_stack::before { 
-      background-image: var(--icon_stack);
-    }
-  

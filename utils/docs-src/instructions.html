@@ -24,12 +24,26 @@
   </pre>
   <p>Når du har importeret CSS, kan du bruge ikoner i HTML ved at sætte en <strong>class="ds-icon-..."</strong> på et element. F.eks.:</p>
   <pre>
-    <code>&lt;span class="ds-icon-hentdata_icon_download"><&lt;span></code>
+    <code>
+&lt;span class="ds-hentdata_icon_download">&lt;/span>
+    </code>
   </pre>
-  <p>Du kan se under det enkelte ikon, hvilken class der hører til.</p>
+  <p>
+    Der findes CSS custom properties (CSS variable) for hvert ikons billede-URL. Det giver nogle flere muligheder, hvis du f.eks. vil anvende ikonet som baggrundsbillede.<br>
+    F.eks.:
+  </p>
+  <pre>
+    <code>
+.my-custom-style {
+  background-image: var(--ds-icon_print);
+}
+    </code>
+  </pre>
+  <p>Du kan se under det enkelte ikon, hvilken class eller custom property det hører til.</p>
+
 
   <h3>Via SVG</h3>
   <p>Alternativt kan du også indsætte ikoner direkte som SVG-kode.</p>
-  <p>For hvert ikon kan du se SVG-koden, som du blot kan kopiere ind i din HTML.</p>
+  <p>Under hvert ikon kan du se SVG-koden, som du blot kan kopiere ind i din HTML.</p>
 
 </article>

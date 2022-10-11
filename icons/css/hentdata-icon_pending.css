@@ -1,0 +1,8 @@
+
+    :root {
+      --ds-hentdata-icon_pending: url('data:image/svg+xml;utf8,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%0A%3Cpath%20d%3D%22M17.7842%2010.3871L19.9962%2011.9962L21.6091%209.64746%22%20stroke%3D%22black%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3Cpath%20d%3D%22M12.5%2012C12.5%2012.2761%2012.2761%2012.5%2012%2012.5C11.7239%2012.5%2011.5%2012.2761%2011.5%2012C11.5%2011.7239%2011.7239%2011.5%2012%2011.5C12.2761%2011.5%2012.5%2011.7239%2012.5%2012Z%22%20stroke%3D%22black%22%2F%3E%0A%3Cpath%20d%3D%22M10%208L11.5977%2011.0859M7%2015L11.1336%2012.5141%22%20stroke%3D%22black%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3Cpath%20d%3D%22M20%2012C20%207.58172%2016.4183%204%2012%204C7.58172%204%204%207.58172%204%2012C4%2016.4183%207.58172%2020%2012%2020C15.1289%2020%2017.8375%2018.2034%2019.1523%2015.5859%22%20stroke%3D%22black%22%20stroke-linecap%3D%22round%22%2F%3E%0A%3C%2Fsvg%3E%0A');
+    }
+    .ds-hentdata-icon_pending::before {
+      background-image: var(--ds-hentdata-icon_pending);
+    }
+  
