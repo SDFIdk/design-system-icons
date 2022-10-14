@@ -107,7 +107,7 @@ async function writeCSSsnippet(filename, svg) {
 
 function addCSStoIndex(filename) {
   return `
-@import "./css/${ filename }";
+@import "css/${ filename }";
   `
 }
 
