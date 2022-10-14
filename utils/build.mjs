@@ -94,7 +94,7 @@ async function writeCSSsnippet(filename, svg) {
     :root {
       --ds-${ shortname }: url('data:image/svg+xml;utf8,${ escaped_svg }');
     }
-    .ds-${ shortname }::before {
+    .ds-icon-${ shortname }::before {
       background-image: var(--ds-${ shortname });
     }
   `
