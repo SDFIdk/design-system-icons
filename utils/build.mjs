@@ -1,5 +1,9 @@
 import { open, readdir } from 'node:fs/promises'
 
+function sanitizeFilename(filename) {
+  return filename.replace('.svg', '').replaceAll('_', '-')
+}
+
 async function readHTML(path) {
   let filehandle
   let html = ''
@@ -51,7 +55,7 @@ async function generateContent(svg_dir) {
 }
 
 async function buildHTMLsnippet(filename, svg) {
-  const shortname = filename.replace('.svg', '').replaceAll('_', '-')
+  const shortname = sanitizeFilename(filename)
   const html = `
   <article id="${ shortname }" class="icon-details">
     <h2>
@@ -76,7 +80,7 @@ async function buildHTMLsnippet(filename, svg) {
 }
 
 async function buildTOCsnippet(filename, svg) {
-  const shortname = filename.replace('.svg', '').replaceAll('_', '-')
+  const shortname = sanitizeFilename(filename)
   const html = `
     <a href="#${ shortname }">${ svg }</a>
   `
@@ -84,7 +88,7 @@ async function buildTOCsnippet(filename, svg) {
 }
 
 async function writeCSSsnippet(filename, svg) {
-  const shortname = filename.replace('.svg', '').replaceAll('_', '-')
+  const shortname = sanitizeFilename(filename)
   const escaped_svg = encodeURIComponent(svg.replace(/(\r\n)+/gi, ''))
   const css = `
     :root {
@@ -96,7 +100,7 @@ async function writeCSSsnippet(filename, svg) {
   `
   let filehandle
   try {
-    filehandle = await open(`./css/${ filename.replace('.svg', '.css').replaceAll('_', '-') }`, 'w')
+    filehandle = await open(`./css/${ sanitizeFilename(filename) }.css`, 'w')
     filehandle.writeFile(css, 'utf8')
   } catch (error) {
     console.error('there was an error:', error.message)
@@ -107,7 +111,7 @@ async function writeCSSsnippet(filename, svg) {
 
 function addCSStoIndex(filename) {
   return `
-@import "css/${ filename }";
+@import "css/${ sanitizeFilename(filename) }.css";
   `
 }
 

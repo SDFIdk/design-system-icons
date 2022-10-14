@@ -1,159 +1,159 @@
 
-@import "css/hentdata_icon_choose.svg";
+@import "css/hentdata-icon-download.css";
   
-@import "css/hentdata_icon_download.svg";
+@import "css/hentdata-icon-choose.css";
   
-@import "css/hentdata_icon_exitsite.svg";
+@import "css/hentdata-icon-exitsite.css";
   
-@import "css/hentdata_icon_get.svg";
+@import "css/hentdata-icon-get.css";
   
-@import "css/hentdata_icon_pending.svg";
+@import "css/hentdata-icon-pending.css";
   
-@import "css/icon_besked.svg";
+@import "css/icon-besked.css";
   
-@import "css/icon_burgerbar.svg";
+@import "css/icon-burgerbar.css";
   
-@import "css/icon_calendar.svg";
+@import "css/icon-calendar.css";
   
-@import "css/icon_checkbox.svg";
+@import "css/icon-checkbox.css";
   
-@import "css/icon_clipboard.svg";
+@import "css/icon-clipboard.css";
   
-@import "css/icon_close.svg";
+@import "css/icon-close.css";
   
-@import "css/icon_code.svg";
+@import "css/icon-code.css";
   
-@import "css/icon_copy.svg";
+@import "css/icon-copy.css";
   
-@import "css/icon_crosshair.svg";
+@import "css/icon-crosshair.css";
   
-@import "css/icon_document.svg";
+@import "css/icon-document.css";
   
-@import "css/icon_drift.svg";
+@import "css/icon-drift.css";
   
-@import "css/icon_dropdown.svg";
+@import "css/icon-dropdown.css";
   
-@import "css/icon_edit.svg";
+@import "css/icon-edit.css";
   
-@import "css/icon_eye.svg";
+@import "css/icon-eye.css";
   
-@import "css/icon_faq.svg";
+@import "css/icon-faq.css";
   
-@import "css/icon_fullscreen.svg";
+@import "css/icon-fullscreen.css";
   
-@import "css/icon_github.svg";
+@import "css/icon-github.css";
   
-@import "css/icon_inbox.svg";
+@import "css/icon-inbox.css";
   
-@import "css/icon_info.svg";
+@import "css/icon-info.css";
   
-@import "css/icon_lock.svg";
+@import "css/icon-lock.css";
   
-@import "css/icon_mail.svg";
+@import "css/icon-mail.css";
   
-@import "css/icon_manual.svg";
+@import "css/icon-manual.css";
   
-@import "css/icon_minus.svg";
+@import "css/icon-minus.css";
   
-@import "css/icon_more.svg";
+@import "css/icon-more.css";
   
-@import "css/icon_moremore.svg";
+@import "css/icon-moremore.css";
   
-@import "css/icon_notification.svg";
+@import "css/icon-notification.css";
   
-@import "css/icon_ok.svg";
+@import "css/icon-ok.css";
   
-@import "css/icon_phone.svg";
+@import "css/icon-phone.css";
   
-@import "css/icon_plus.svg";
+@import "css/icon-plus.css";
   
-@import "css/icon_print.svg";
+@import "css/icon-print.css";
   
-@import "css/icon_radiobutton.svg";
+@import "css/icon-radiobutton.css";
   
-@import "css/icon_rotate.svg";
+@import "css/icon-rotate.css";
   
-@import "css/icon_search.svg";
+@import "css/icon-search.css";
   
-@import "css/icon_share.svg";
+@import "css/icon-share.css";
   
-@import "css/icon_sortering.svg";
+@import "css/icon-sortering.css";
   
-@import "css/icon_stack.svg";
+@import "css/icon-stack.css";
   
-@import "css/icon_support.svg";
+@import "css/icon-support.css";
   
-@import "css/icon_thrash.svg";
+@import "css/icon-thrash.css";
   
-@import "css/icon_token.svg";
+@import "css/icon-token.css";
   
-@import "css/icon_users.svg";
+@import "css/icon-users.css";
   
-@import "css/map_icon_adresse.svg";
+@import "css/map-icon-adresse.css";
   
-@import "css/map_icon_download_gridvalg.svg";
+@import "css/map-icon-download-gridvalg.css";
   
-@import "css/map_icon_download_listvalg.svg";
+@import "css/map-icon-download-listvalg.css";
   
-@import "css/map_icon_download_polygonareal.svg";
+@import "css/map-icon-download-polygonareal.css";
   
-@import "css/map_icon_download_tegnetareal.svg";
+@import "css/map-icon-download-tegnetareal.css";
   
-@import "css/map_icon_findonmap.svg";
+@import "css/map-icon-findonmap.css";
   
-@import "css/map_icon_koordinater.svg";
+@import "css/map-icon-koordinater.css";
   
-@import "css/map_icon_move.svg";
+@import "css/map-icon-move.css";
   
-@import "css/map_icon_nordpil.svg";
+@import "css/map-icon-nordpil.css";
   
-@import "css/map_icon_ruler.svg";
+@import "css/map-icon-ruler.css";
   
-@import "css/map_icon_sted.svg";
+@import "css/map-icon-sted.css";
   
-@import "css/map_icon_vej.svg";
+@import "css/map-icon-vej.css";
   
-@import "css/sider_icon_accessibility.svg";
+@import "css/sider-icon-accessibility.css";
   
-@import "css/sider_icon_apps.svg";
+@import "css/sider-icon-apps.css";
   
-@import "css/sider_icon_cases.svg";
+@import "css/sider-icon-cases.css";
   
-@import "css/sider_icon_data.svg";
+@import "css/sider-icon-data.css";
   
-@import "css/sider_icon_drift.svg";
+@import "css/sider-icon-drift.css";
   
-@import "css/sider_icon_english.svg";
+@import "css/sider-icon-english.css";
   
-@import "css/sider_icon_help.svg";
+@import "css/sider-icon-help.css";
   
-@import "css/sider_icon_lab.svg";
+@import "css/sider-icon-lab.css";
   
-@import "css/sider_icon_map.svg";
+@import "css/sider-icon-map.css";
   
-@import "css/sider_icon_news.svg";
+@import "css/sider-icon-news.css";
   
-@import "css/sider_icon_privatliv.svg";
+@import "css/sider-icon-privatliv.css";
   
-@import "css/sider_icon_terms.svg";
+@import "css/sider-icon-terms.css";
   
-@import "css/sider_icon_user.svg";
+@import "css/sider-icon-user.css";
   
-@import "css/some_linkedin.svg";
+@import "css/some-linkedin.css";
   
-@import "css/some_trello.svg";
+@import "css/some-trello.css";
   
-@import "css/logo-micro.svg";
+@import "css/logo-micro.css";
   
-@import "css/logo-normal-graa.svg";
+@import "css/logo-normal-graa.css";
   
-@import "css/logo-normal-hvid.svg";
+@import "css/logo-normal-hvid.css";
   
-@import "css/logo-normal-sort.svg";
+@import "css/logo-normal-sort.css";
   
-@import "css/logo-normal-tyrkis-graa.svg";
+@import "css/logo-normal-tyrkis-graa.css";
   
-@import "css/logo-normal-tyrkis.svg";
+@import "css/logo-normal-tyrkis.css";
   
-@import "css/logo-simple-micro.svg";
+@import "css/logo-simple-micro.css";
   
