@@ -1,7 +1,7 @@
 
-@import "./css/hentdata_icon_choose.svg";
-  
 @import "./css/hentdata_icon_download.svg";
+  
+@import "./css/hentdata_icon_choose.svg";
   
 @import "./css/hentdata_icon_exitsite.svg";
   
@@ -17,9 +17,9 @@
   
 @import "./css/icon_checkbox.svg";
   
-@import "./css/icon_clipboard.svg";
-  
 @import "./css/icon_close.svg";
+  
+@import "./css/icon_clipboard.svg";
   
 @import "./css/icon_code.svg";
   
@@ -140,8 +140,6 @@
 @import "./css/sider_icon_user.svg";
   
 @import "./css/some_linkedin.svg";
-  
-@import "./css/some_trello.svg";
   
 @import "./css/logo-micro.svg";
   
