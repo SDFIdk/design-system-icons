@@ -37,14 +37,14 @@ async function generateContent(svg_dir) {
           html += await buildHTMLsnippet(file, svg)
           toc += await buildTOCsnippet(file, svg)
           await writeCSSsnippet(file, svg)
-          index_css += addCSStoIndex(file)
         })
       } catch (error) {
         console.error('there was an error:', error.message)
       } finally {
         await filehandle?.close()
       }
-
+      // Update index CSS
+      index_css += addCSStoIndex(file)
     }
   } catch (err) {
     console.error(err)

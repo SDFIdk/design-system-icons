@@ -91,9 +91,9 @@
   
 @import "css/map-icon-adresse.css";
   
-@import "css/map-icon-download-listvalg.css";
-  
 @import "css/map-icon-download-gridvalg.css";
+  
+@import "css/map-icon-download-listvalg.css";
   
 @import "css/map-icon-download-polygonareal.css";
   
@@ -113,9 +113,9 @@
   
 @import "css/map-icon-vej.css";
   
-@import "css/sider-icon-apps.css";
-  
 @import "css/sider-icon-accessibility.css";
+  
+@import "css/sider-icon-apps.css";
   
 @import "css/sider-icon-cases.css";
   
@@ -143,6 +143,10 @@
   
 @import "css/some-trello.css";
   
+@import "css/some-twitter.css";
+  
+@import "css/some-youtube.css";
+  
 @import "css/logo-micro.css";
   
 @import "css/logo-normal-graa.css";
@@ -154,4 +158,10 @@
 @import "css/logo-normal-tyrkis-graa.css";
   
 @import "css/logo-normal-tyrkis.css";
+  
+@import "css/logo-simple-micro.css";
+  
+@import "css/logo-simple.css";
+  
+@import "css/logo.css";
   
