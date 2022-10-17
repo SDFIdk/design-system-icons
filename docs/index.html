@@ -16,7 +16,7 @@
   <style>
     html,
     body {
-      width: auto;
+      
     }
     nav {
       display: flex;
@@ -68,14 +68,32 @@
     a[href="#logo-normal-hvid"] {
       background-color: var(--mork-tyrkis);
     }
-    a[href="#logo-normal-hvid"] {
-      
-    }
+
   </style>
 
 </head>
-<body class="ds-margin" id="content-top">
-  <h1>Design system icons</h1>
+<body id="content-top">
+  <header data-theme="dark" id="header" style="margin-bottom: var(--typography-spacing-vertical);">
+
+    <div class="ds-container ds-padding">
+      <p class="ds-logo-responsive ds-logo-pull-left">
+        <strong>Dataforsyningen</strong>
+        <span>Styrelsen for Dataforsyning og Infrastruktur</span>
+      </p>  
+    </div>
+
+    <div class="ds-container ds-padding" style="padding: 3rem 1rem;">
+      <h1 style="margin: 0;">Design system icons</h1>
+      <p class="blockquote" style="margin: 0;">Implmentationer af SDFIs ikoner og logoer i CSS/SVG</p>
+    </div>
+
+  </header>
+  
+  <main class="ds-container ds-padding">
+    <p>
+      Klik på et ikon for at se detaljer om det.<br>
+      <a href="#instructions">Kom i gang med at bruge <em>design system icons</em></a>
+    </p>
 <h2>Ikoner</h2><nav>
     <a href="#hentdata-icon-choose"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
@@ -792,9 +810,13 @@
 <path class="logo-image" d="M4.8 6.60002C5.79412 6.60002 6.60001 5.79413 6.60001 4.80002C6.60001 3.8059 5.79412 3.00002 4.8 3.00002C3.80589 3.00002 3 3.8059 3 4.80002C3 5.79413 3.80589 6.60002 4.8 6.60002Z"/>
 </svg>
 </a>
-  </nav><article>
+  </nav><p style="margin-top: var(--spacing);">
+  <strong>Bemærk:</strong> SDFIs logoer må kun bruges, hvor Styrelsen for Dataforsyning og Infrastruktur er afsender på indholdet.
+</p>
 
-  <h2>Sådan bruger du <em>design system icons</em> og logoer</h2>
+<article id="instructions">
+
+  <h2>Sådan bruger du <em>design system icons</em></h2>
 
   <h3>Via CSS</h3>
   <p>Først skal du have installeret design-system-icons med NPM:</p>
@@ -845,6 +867,8 @@ npm install --save github:SDFIdk/design-system-icons
   <h3>Via SVG</h3>
   <p>Alternativt kan du også indsætte ikoner direkte som SVG-kode.</p>
   <p>Under hvert ikon kan du se SVG-koden, som du blot kan kopiere ind i din HTML.</p>
+
+  <p><a href="#content-top">Til oversigt</a></p>
 
 </article>
   <article id="hentdata-icon-choose" class="icon-details">
@@ -3524,8 +3548,22 @@ npm install --save github:SDFIdk/design-system-icons
     <a href="#content-top">Til oversigt</a>
   </article>
   
-  <footer>
-    <h2 class="h5">Styrelsen for Dataforsyning og Infrastruktur</h2>
+   </main>
+
+   <footer style="background-color: var(--medium-steel);">
+    <div class="container ds-padding">
+      <p>© 2022 Styrelsen for Dataforsyning og Infrastruktur</p>
+      <p style="display: inline-block;">
+        <a href="https://github.com/SDFIdk/design-system-icons" style="display: flex; align-items: center;">
+          <svg height="32" viewBox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg" style="margin: 0 0.5rem 0 -0.66rem;">
+            <path fill="black" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+          </svg>
+          <span>
+            Find os på Github
+          </span>
+        </a>
+      </p>
+    </div>
   </footer>
 </body>
 </html>
