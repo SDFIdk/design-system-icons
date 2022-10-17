@@ -4,7 +4,7 @@
   "description": "A collection of icons og logo image files for use in SDFI branded applications.",
   "main": "index.js",
   "scripts": {
-    "build": "node utils/build.mjs && cp node_modules/design-system-css/assets/designsystem.css docs/css/designsystem.css",
+    "build": "node utils/build.mjs && cp node_modules/design-system-css/assets/designsystem.css docs/css/designsystem.css && cp css/logo-big.css docs/css/logo-big.css && cp css/logo-micro.css docs/css/logo-micro.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
