@@ -64,7 +64,7 @@ async function buildHTMLsnippet(filename, svg) {
     <div class="icon-container">  
       <div>
         <h3 class="h5">CSS</h3>
-        <pre><code>@import "design-system-icons/css/${ shortname }.css";</code></pre>
+        <pre><code>@import "@dataforsyningen/icons/css/${ shortname }.css";</code></pre>
         <p>Brug i HTML:</p>
         <pre><code>&lt;span class="ds-icon-${ shortname }">&lt;/span></code></pre>
         <p>CSS custom property:</p>
