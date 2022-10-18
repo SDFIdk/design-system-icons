@@ -29,10 +29,10 @@ jobs:
           scope: '@dataforsyningen'
 
       # Publish to npm
-      - run: npm login --scope=@dataforsyningen
+      # - run: npm login --scope=@dataforsyningen
       - run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   publish-gpr:
     needs: build
