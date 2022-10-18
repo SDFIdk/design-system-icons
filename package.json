@@ -1,6 +1,6 @@
 {
   "name": "@dataforsyningen/icons",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "author": "Dataforsyningen <support@sdfi.dk>",
   "description": "A collection of icons og logo images that are part of the SDFI design system.",
   "main": "index.js",
