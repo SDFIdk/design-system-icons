@@ -25,23 +25,20 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org
           scope: '@dataforsyningen'
-      - run: npm publish --access public --verbose
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
-#  publish-gpr:
-#    needs: build
-#    runs-on: ubuntu-latest
-#    permissions:
-#      packages: write
-#      contents: read
-#    steps:
-#      - uses: actions/checkout@v3
-#      - uses: actions/setup-node@v3
-#        with:
-#          node-version: 16
-#          registry-url: https://npm.pkg.github.com
-#          scope: '@dataforsyningen'
-#      - run: npm publish
-#        env:
-#          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+  publish-gpr:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://npm.pkg.github.com
+          scope: '@dataforsyningen'
+      - run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
