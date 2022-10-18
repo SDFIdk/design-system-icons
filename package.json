@@ -22,6 +22,6 @@
     "design-system-css": "github:SDFIdk/design-system-css"
   },
   "publishConfig": {
-    "@dataforsyningen:registry": "https://npm.pkg.github.com"
+    "@SDFIdk:registry": "https://npm.pkg.github.com"
   }
 }
