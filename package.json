@@ -1,6 +1,6 @@
 {
   "name": "@dataforsyningen/icons",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A collection of icons og logo images that are part of the SDFI design system.",
   "main": "index.js",
   "scripts": {
@@ -20,5 +20,8 @@
   "homepage": "https://github.com/SDFIdk/design-system-icons#readme",
   "devDependencies": {
     "design-system-css": "github:SDFIdk/design-system-css"
+  },
+  "publishConfig": {
+    "@dataforsyningen:registry": "https://npm.pkg.github.com"
   }
 }
