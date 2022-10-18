@@ -1,7 +1,7 @@
 {
-  "name": "design-system-icons",
-  "version": "2.0.0",
-  "description": "A collection of icons og logo image files for use in SDFI branded applications.",
+  "name": "@dataforsyningen/icons",
+  "version": "1.0.0",
+  "description": "A collection of icons og logo images that are part of the SDFI design system.",
   "main": "index.js",
   "scripts": {
     "build": "node utils/build.mjs && cp node_modules/design-system-css/assets/designsystem.css docs/css/designsystem.css && cp css/logo-big.css docs/css/logo-big.css && cp css/logo-micro.css docs/css/logo-micro.css",
