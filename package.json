@@ -20,8 +20,5 @@
   "homepage": "https://github.com/SDFIdk/design-system-icons#readme",
   "devDependencies": {
     "design-system-css": "github:SDFIdk/design-system-css"
-  },
-  "publishConfig": {
-    "@SDFIdk:registry": "https://npm.pkg.github.com"
   }
 }
