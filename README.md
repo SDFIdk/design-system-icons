@@ -10,7 +10,7 @@ This repository is meant to be used in tandem with *Design System CSS* repo at h
 
 1. Fetch package:
    ```
-   npm install --save @dataforsyningen/icons
+   npm i --save @dataforsyningen/icons
    ```
 2. Refer to [the documentation](https://sdfidk.github.io/design-system-icons/) on how to import and use icon CSS
 
