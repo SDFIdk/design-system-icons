@@ -1,7 +1,11 @@
 {
   "name": "@dataforsyningen/icons",
   "version": "0.2.1",
-  "author": "Dataforsyningen <support@sdfi.dk>",
+  "author": {
+    "name" : "Styrelsen for Dataforsyning og Infrastruktur",
+    "email" : "support@sdfi.dk",
+    "url" : "https://sdfi.dk/"
+  },
   "description": "A collection of icons og logo images that are part of the SDFI design system.",
   "main": "index.js",
   "scripts": {
@@ -12,7 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/SDFIdk/design-system-icons.git"
   },
-  "keywords": [],
+  "keywords": ["SDFI", "design system", "icons"],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/SDFIdk/design-system-icons/issues"
