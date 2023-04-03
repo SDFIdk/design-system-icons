@@ -26,8 +26,7 @@ npm run build
 ## Publish NPM
 
 Create a new release in Github to publish an updated NPM package.
-Details are available in the "Npm" section of SDFI ITU's wiki.
 
 ## Acknowledgements
 
-Icons images are used with permission from SDFI and the [SDFI Design Figma](https://www.figma.com/file/G9g2vp2MOcejoPB3d1xJvU/Dataforsyningen-Design-System?node-id=2%3A3357)
+Icons images are used with permission from SDFI and the SDFI Design Figma.
