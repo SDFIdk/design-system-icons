@@ -20,11 +20,21 @@
       display: flex;
       flex-flow: row wrap;
       justify-content: flex-start;
-      gap: 2rem;
+      gap: 1rem;
     }
     nav > a {
-      flex: 0 0 2rem;
+      flex: 0 0 3rem;
       text-align: center;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+    }
+    nav > a:hover,
+    nav > a:active {
+      background-color: var(--lys-steel);
+      border-radius: 50%;
     }
     nav > a > svg {
       width: 2rem;
