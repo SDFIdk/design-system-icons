@@ -1,6 +1,6 @@
 
     :root {
-      --ds-icon-fullscreen: url('data:image/svg+xml;utf8,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M15%206H18M18%206V9M18%206L14%2010M9%2018H6M6%2018V15M6%2018L9.5%2014M18%2015V18M18%2018H15M18%2018L14%2014M6%209L6%206M6%206L9%206M6%206L10%2010%22%20stroke%3D%22hsl(186%2C100%25%2C33%25)%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3C%2Fsvg%3E%0A');
+      --ds-icon-fullscreen: url('data:image/svg+xml;utf8,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20class%3D%22ds-svg-icon%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M15%206H18M18%206V9M18%206L14%2010M9%2018H6M6%2018V15M6%2018L9.5%2014M18%2015V18M18%2018H15M18%2018L14%2014M6%209L6%206M6%206L9%206M6%206L10%2010%22%20stroke%3D%22hsl(186%2C100%25%2C33%25)%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3C%2Fsvg%3E%0A');
     }
     .ds-icon-icon-fullscreen::before {
       background-image: var(--ds-icon-fullscreen);
