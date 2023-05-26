@@ -1,0 +1,8 @@
+
+    :root {
+      --ds-map-icon-sun: url('data:image/svg+xml;utf8,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%225%22%20stroke%3D%22hsl(186%2C100%25%2C33%25)%22%2F%3E%3Cpath%20d%3D%22M3%2012L5%2012M19%2012L21%2012%22%20stroke%3D%22hsl(186%2C100%25%2C33%25)%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M12%203L12%205M12%2019L12%2021%22%20stroke%3D%22hsl(186%2C100%25%2C33%25)%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M18.3638%205.63672L16.9496%207.05093M7.05006%2016.9504L5.63585%2018.3646%22%20stroke%3D%22hsl(186%2C100%25%2C33%25)%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M18.3638%2018.3633L16.9496%2016.9491M7.05006%207.04957L5.63585%205.63536%22%20stroke%3D%22hsl(186%2C100%25%2C33%25)%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E');
+    }
+    .ds-icon-map-icon-sun::before {
+      background-image: var(--ds-map-icon-sun);
+    }
+  

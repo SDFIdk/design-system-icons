@@ -73,7 +73,7 @@ async function buildHTMLsnippet(filename, svg) {
         <pre><code>${ svg.replaceAll('<', '&lt;') }</code></pre>
       </div>
     </div>
-    <a href="#content-top">Til oversigt</a>
+    <p><a href="#content-top">Til oversigt</a></p>
   </article>
   `
   return html
