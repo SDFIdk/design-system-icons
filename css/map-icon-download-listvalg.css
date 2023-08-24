@@ -1,6 +1,6 @@
 
     :root {
-      --ds-map-icon-download-listvalg: url('data:image/svg+xml;utf8,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20class%3D%22ds-svg-icon%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M18%2015.75H11.25M17.9995%2012H11.25M18%208.25H11.25M9%2015.75H6.75M8.99984%2012H6.75M9%208.25H6.75%22%20stroke%3D%22hsl(186%2C100%25%2C33%25)%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E');
+      --ds-map-icon-download-listvalg: url('data:image/svg+xml;utf8,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20class%3D%22ds-svg-icon%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M18%2015.75H11.25M17.9995%2012H11.25M18%208.25H11.25M9%2015.75H6.75M8.99984%2012H6.75M9%208.25H6.75%22%20stroke%3D%22hsl(186%2C100%25%2C33%25)%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3C%2Fsvg%3E%0A');
     }
     .ds-icon-map-icon-download-listvalg::before {
       background-image: var(--ds-map-icon-download-listvalg);
