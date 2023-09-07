@@ -31,9 +31,11 @@ async function generateContent(svg_dir) {
 
 async function buildSVGsnippet(svg, filename) {
   const id = filenameToId(filename)
-  const regex4 = /<svg.*?>|<\/svg>|\t|\n|\r/g
-  const newSvg = svg.replaceAll(regex4, '')
-  return `<symbol id="${ id }" width="100%" height="100%" viewBox="0 0 24 24">${ newSvg }</symbol>`
+  const svgRegex = /<svg.*?>|<\/svg>|\t|\n|\r/g
+  const viewBoxRegex = /viewBox="[\d\s]+"/
+  const viewBoxAttr = svg.match(viewBoxRegex)
+  const newSvg = svg.replaceAll(svgRegex, '')
+  return `<symbol id="${ id }" width="100%" height="100%" ${ viewBoxAttr[0] }>${ newSvg }</symbol>`
 }
 
 export async function buildSVG() {
