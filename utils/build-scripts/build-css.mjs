@@ -17,7 +17,7 @@ async function readHTML(path) {
   }
 }
 
-async function generateContent(svg_dir) {
+async function generateContent(svg_dir, spritefilename) {
   let filehandle
   let html = ''
   let toc = '<nav>'
@@ -32,7 +32,7 @@ async function generateContent(svg_dir) {
 
           // This is where the magic happens
           html += await buildHTMLsnippet(file, svg)
-          toc += await buildTOCsnippet(file, svg)
+          toc += await buildTOCsnippet(file, spritefilename)
           await writeCSSsnippet(file, svg)
         })
       } catch (error) {
@@ -76,11 +76,10 @@ async function buildHTMLsnippet(filename, svg) {
   return html
 }
 
-async function buildTOCsnippet(filename, svg) {
+async function buildTOCsnippet(filename, spritefilename) {
   const shortname = filenameToId(filename)
   const html = `
-    <a href="#${ shortname }">${ svg }</a>
-    <a href="#${ shortname }"><svg><use href="./img/icon-sprites.svg#${ shortname }"></svg></a>
+    <a href="#${ shortname }"><svg><use href="./img/${ spritefilename }#${ shortname }"></svg></a>
   `
   return html
 }
@@ -118,8 +117,8 @@ export async function buildCSS() {
 
   // Build HTML
   let markup = ''
-  let icon_content = await generateContent('./icons/svg')
-  let logo_content = await generateContent('./logos/svg')
+  let icon_content = await generateContent('./icons/svg', 'icon-sprites.svg')
+  let logo_content = await generateContent('./logos/svg', 'logo-sprites.svg')
 
   markup += await readHTML('./utils/docs-src/header.html')
   markup += '<h2>Ikoner</h2>'

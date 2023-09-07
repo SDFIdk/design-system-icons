@@ -5,8 +5,6 @@
   
 @import "css/hentdata-exitsite.css";
   
-@import "css/hentdata-get.css";
-  
 @import "css/hentdata-pending.css";
   
 @import "css/question.css";
@@ -61,8 +59,6 @@
   
 @import "css/drift.css";
   
-@import "css/dropdown.css";
-  
 @import "css/edit.css";
   
 @import "css/eye.css";
@@ -84,10 +80,6 @@
 @import "css/manual.css";
   
 @import "css/minus.css";
-  
-@import "css/more.css";
-  
-@import "css/moremore.css";
   
 @import "css/notification.css";
   
@@ -113,9 +105,9 @@
   
 @import "css/support.css";
   
-@import "css/thrash.css";
-  
 @import "css/token.css";
+  
+@import "css/trash.css";
   
 @import "css/users.css";
   
