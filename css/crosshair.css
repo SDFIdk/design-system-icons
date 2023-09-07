@@ -1,0 +1,8 @@
+
+    :root {
+      --ds-icon-crosshair: url('data:image/svg+xml;utf8,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20class%3D%22ds-svg-icon%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M19%2012C19%2015.866%2015.866%2019%2012%2019M19%2012C19%208.13401%2015.866%205%2012%205M19%2012H16.6666M12%2019C8.13401%2019%205%2015.866%205%2012M12%2019V16.6667M5%2012C5%208.13401%208.13401%205%2012%205M5%2012H7.33333M12%205V7.33333%22%20stroke%3D%22hsl(186%2C100%25%2C33%25)%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3C%2Fsvg%3E%0A');
+    }
+    .ds-icon-crosshair::before {
+      background-image: var(--ds-icon-crosshair);
+    }
+  

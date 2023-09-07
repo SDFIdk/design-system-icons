@@ -1,177 +1,177 @@
 
-@import "css/hentdata-icon-choose.css";
+@import "css/hentdata-choose.css";
   
-@import "css/hentdata-icon-download.css";
+@import "css/hentdata-download.css";
   
-@import "css/hentdata-icon-exitsite.css";
+@import "css/hentdata-exitsite.css";
   
-@import "css/hentdata-icon-get.css";
+@import "css/hentdata-get.css";
   
-@import "css/hentdata-icon-pending.css";
+@import "css/hentdata-pending.css";
   
-@import "css/icon-question.css";
+@import "css/question.css";
   
-@import "css/icon-arrow-double-down.css";
+@import "css/arrow-double-down.css";
   
-@import "css/icon-arrow-double-left.css";
+@import "css/arrow-double-left.css";
   
-@import "css/icon-arrow-double-right.css";
+@import "css/arrow-double-right.css";
   
-@import "css/icon-arrow-double-up.css";
+@import "css/arrow-double-up.css";
   
-@import "css/icon-arrow-down.css";
+@import "css/arrow-down.css";
   
-@import "css/icon-arrow-left.css";
+@import "css/arrow-left.css";
   
-@import "css/icon-arrow-right.css";
+@import "css/arrow-right.css";
   
-@import "css/icon-arrow-single-down.css";
+@import "css/arrow-single-down.css";
   
-@import "css/icon-arrow-single-left.css";
+@import "css/arrow-single-left.css";
   
-@import "css/icon-arrow-single-right.css";
+@import "css/arrow-single-right.css";
   
-@import "css/icon-arrow-single-up.css";
+@import "css/arrow-single-up.css";
   
-@import "css/icon-arrow-up.css";
+@import "css/arrow-up.css";
   
-@import "css/icon-besked.css";
+@import "css/besked.css";
   
-@import "css/icon-burgerbar.css";
+@import "css/burgerbar.css";
   
-@import "css/icon-calendar.css";
+@import "css/calendar.css";
   
-@import "css/icon-checkbox.css";
+@import "css/checkbox.css";
   
-@import "css/icon-clipboard.css";
+@import "css/clipboard.css";
   
-@import "css/icon-close.css";
+@import "css/close.css";
   
-@import "css/icon-code.css";
+@import "css/code.css";
   
-@import "css/icon-compass.css";
+@import "css/compass.css";
   
-@import "css/icon-copy.css";
+@import "css/copy.css";
   
-@import "css/icon-crosshair.css";
+@import "css/crosshair.css";
   
-@import "css/icon-document.css";
+@import "css/document.css";
   
-@import "css/icon-doublecrosshair.css";
+@import "css/doublecrosshair.css";
   
-@import "css/icon-drift.css";
+@import "css/drift.css";
   
-@import "css/icon-dropdown.css";
+@import "css/dropdown.css";
   
-@import "css/icon-edit.css";
+@import "css/edit.css";
   
-@import "css/icon-eye.css";
+@import "css/eye.css";
   
-@import "css/icon-faq.css";
+@import "css/faq.css";
   
-@import "css/icon-fullscreen.css";
+@import "css/fullscreen.css";
   
-@import "css/icon-github.css";
+@import "css/github.css";
   
-@import "css/icon-inbox.css";
+@import "css/inbox.css";
   
-@import "css/icon-info.css";
+@import "css/info.css";
   
-@import "css/icon-lock.css";
+@import "css/lock.css";
   
-@import "css/icon-mail.css";
+@import "css/mail.css";
   
-@import "css/icon-manual.css";
+@import "css/manual.css";
   
-@import "css/icon-minus.css";
+@import "css/minus.css";
   
-@import "css/icon-more.css";
+@import "css/more.css";
   
-@import "css/icon-moremore.css";
+@import "css/moremore.css";
   
-@import "css/icon-notification.css";
+@import "css/notification.css";
   
-@import "css/icon-ok.css";
+@import "css/ok.css";
   
-@import "css/icon-phone.css";
+@import "css/phone.css";
   
-@import "css/icon-plus.css";
+@import "css/plus.css";
   
-@import "css/icon-print.css";
+@import "css/print.css";
   
-@import "css/icon-radiobutton.css";
+@import "css/radiobutton.css";
   
-@import "css/icon-rotate.css";
+@import "css/rotate.css";
   
-@import "css/icon-search.css";
+@import "css/search.css";
   
-@import "css/icon-share.css";
+@import "css/share.css";
   
-@import "css/icon-sortering.css";
+@import "css/sortering.css";
   
-@import "css/icon-stack.css";
+@import "css/stack.css";
   
-@import "css/icon-support.css";
+@import "css/support.css";
   
-@import "css/icon-thrash.css";
+@import "css/thrash.css";
   
-@import "css/icon-token.css";
+@import "css/token.css";
   
-@import "css/icon-users.css";
+@import "css/users.css";
   
-@import "css/map-icon-adresse.css";
+@import "css/map-adresse.css";
   
-@import "css/map-icon-download-gridvalg.css";
+@import "css/map-download-gridvalg.css";
   
-@import "css/map-icon-download-listvalg.css";
+@import "css/map-download-listvalg.css";
   
-@import "css/map-icon-download-polygonareal.css";
+@import "css/map-download-polygonareal.css";
   
-@import "css/map-icon-download-tegnetareal.css";
+@import "css/map-download-tegnetareal.css";
   
-@import "css/map-icon-findonmap.css";
+@import "css/map-findonmap.css";
   
-@import "css/map-icon-koordinater.css";
+@import "css/map-koordinater.css";
   
-@import "css/map-icon-move.css";
+@import "css/map-move.css";
   
-@import "css/map-icon-nordpil.css";
+@import "css/map-nordpil.css";
   
-@import "css/map-icon-position.css";
+@import "css/map-position.css";
   
-@import "css/map-icon-ruler.css";
+@import "css/map-ruler.css";
   
-@import "css/map-icon-sted.css";
+@import "css/map-sted.css";
   
-@import "css/map-icon-sun.css";
+@import "css/map-sun.css";
   
-@import "css/map-icon-vej.css";
+@import "css/map-vej.css";
   
-@import "css/sider-icon-english.css";
+@import "css/sider-english.css";
   
-@import "css/sider-icon-accessibility.css";
+@import "css/sider-accessibility.css";
   
-@import "css/sider-icon-apps.css";
+@import "css/sider-apps.css";
   
-@import "css/sider-icon-cases.css";
+@import "css/sider-cases.css";
   
-@import "css/sider-icon-data.css";
+@import "css/sider-data.css";
   
-@import "css/sider-icon-drift.css";
+@import "css/sider-drift.css";
   
-@import "css/sider-icon-help.css";
+@import "css/sider-help.css";
   
-@import "css/sider-icon-lab.css";
+@import "css/sider-lab.css";
   
-@import "css/sider-icon-map.css";
+@import "css/sider-map.css";
   
-@import "css/sider-icon-news.css";
+@import "css/sider-news.css";
   
-@import "css/sider-icon-privatliv.css";
+@import "css/sider-privatliv.css";
   
-@import "css/sider-icon-terms.css";
+@import "css/sider-terms.css";
   
-@import "css/sider-icon-user.css";
+@import "css/sider-user.css";
   
 @import "css/some-linkedin.css";
   
