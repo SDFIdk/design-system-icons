@@ -1,17 +1,17 @@
 <svg width="100%" height="100%" viewBox="0 0 43 46" fill="none" xmlns="http://www.w3.org/2000/svg" class="sdfi-logo-wrapper">
-  <style>
+  <style type="text/css">
     .sdfi-logo-wrapper { container-type: inline-size; }
-    @container (width < 21px) {
+    @container (max-width: 20px) {
       .sdfi-logo-small { display: block; }
       .sdfi-logo-medium { display: none; }
       .sdfi-logo-large  { display: none; }
     }
-    @container (width > 21px) and (width < 41px) {
+    @container (min-width: 21px) and (max-width: 40px) {
       .sdfi-logo-small { display: none; }
       .sdfi-logo-medium { display: block; }
       .sdfi-logo-large  { display: none; }
     } 
-    @container (width > 41px) {
+    @container (min-width: 41px) {
       .sdfi-logo-small { display: none; }
       .sdfi-logo-medium { display: none; }
       .sdfi-logo-large  { display: block; }

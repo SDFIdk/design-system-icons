@@ -121,24 +121,20 @@ export async function buildCSS() {
 
   // Build HTML
   let markup = ''
-  let icon_content = await generateContent('./icons/svg', 'icon-sprites.svg')
-  let logo_content = await generateContent('./logos/svg', 'logo-sprites.svg')
+  let icon_content = await generateContent('./icons/svg', 'ds-icon-sprites.svg')
 
   markup += await readHTML('./utils/docs-src/header.html')
   markup += '<h2>Ikoner</h2>'
   markup += icon_content[1]
-  markup += '<h2>Logo</h2>'
-  markup += logo_content[1]
   markup += await readHTML('./utils/docs-src/instructions.html')
   markup += icon_content[0]
-  markup += logo_content[0]
   markup += await readHTML('./utils/docs-src/footer.html')
 
   // Write HTML file
   await writeToFile(markup, './docs/index.html')
 
   // Write new index CSS file
-  const index_css = icon_content[2] + logo_content[2]
+  const index_css = icon_content[2]
   await writeToFile(index_css, './index.css')
 
   console.log('Done 👍')

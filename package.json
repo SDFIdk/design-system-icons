@@ -9,7 +9,7 @@
   "description": "A collection of icons og logo images that are part of the SDFI design system.",
   "main": "index.js",
   "scripts": {
-    "build": "node utils/build.mjs && cp node_modules/@dataforsyningen/css/assets/designsystem.css docs/css/designsystem.css && cp icons/icon-sprites.svg docs/img/ && cp logos/logo-sprites.svg docs/img/ && cp css/logo-big.css docs/css/logo-big.css && cp css/logo-micro.css docs/css/logo-micro.css",
+    "build": "node utils/build.mjs && cp node_modules/@dataforsyningen/css/assets/designsystem.css docs/css/designsystem.css && cp icons/ds-icon-sprites.svg docs/img/",
     "test": "echo \"Error: no test specified yet\" && exit 0"
   },
   "repository": {
