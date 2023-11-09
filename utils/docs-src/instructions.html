@@ -6,7 +6,24 @@
 
   <h2>Sådan bruger du <em>Design System Icons</em></h2>
 
+  <h3>Med SVG sprite (anbefalet)</h3>
+
+  <p>Du kan gemme alle ikoner som én fil og blot referere til ikonerne.</p>
+  <p>Download og gem <strong>ds-icon-sprites.svg</strong> et passende sted (<strong>PATH</strong>).</p>
+  <p>Herefter kan du blot indsætte SVG-tags og angive en reference til det ønskede ikon med <strong>use</strong>. F.eks.:</p>
+  <pre>
+    <code>
+&lt;svg>&lt;use href="PATH/logo-sprites.svg#arrow-right">&lt;/svg>
+    </code>
+  </pre>
+
+  <h3>Med embedded SVG</h3>
+
+  <p>Du kan indsætte ikoner direkte som SVG-kode. Det er en fordel, hvis du kun skal bruge enkelte ikoner.</p>
+  <p>Under hvert ikon kan du se SVG-koden, som du blot kan copy/paste ind i din HTML.</p>
+
   <h3>Via CSS</h3>
+
   <p>Først skal du have installeret <em>@dataforsyningen/icons</em> med NPM:</p>
   <pre>
     <code>
@@ -50,11 +67,6 @@ npm i --save @dataforsyningen/icons
     </code>
   </pre>
   <p>Du kan se under det enkelte ikon, hvilken class eller custom property det hører til.</p>
-
-
-  <h3>Via SVG</h3>
-  <p>Alternativt kan du også indsætte ikoner direkte som SVG-kode.</p>
-  <p>Under hvert ikon kan du se SVG-koden, som du blot kan kopiere ind i din HTML.</p>
 
   <p><a href="#content-top">Til oversigt</a></p>
 

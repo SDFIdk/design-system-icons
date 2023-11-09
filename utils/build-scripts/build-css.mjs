@@ -60,14 +60,18 @@ async function buildHTMLsnippet(filename, svg) {
     </h2> 
     <div class="icon-container">  
       <div>
+        <h3 class="h5">SVG sprite</h3>
+        <pre><code>&lt;svg>&lt;use href="PATH/ds-icon-sprites.svg#${ shortname }">&lt;/svg></code></pre>
+        <p><em>Husk at ændre PATH til din egen opsætning.</em></p>
+        <h3 class="h5">SVG embed</h3>
+        <pre><code>${ svg.replaceAll('<', '&lt;') }</code></pre>
         <h3 class="h5">CSS</h3>
         <pre><code>@import "@dataforsyningen/icons/css/${ shortname }.css";</code></pre>
         <p>Brug i HTML:</p>
         <pre><code>&lt;span class="ds-icon-${ shortname }">&lt;/span></code></pre>
         <p>CSS custom property:</p>
         <pre><code>--ds-icon-${ shortname }</code></pre>
-        <h3 class="h5">SVG</h3>
-        <pre><code>${ svg.replaceAll('<', '&lt;') }</code></pre>
+        
       </div>
     </div>
     <p><a href="#content-top">Til oversigt</a></p>

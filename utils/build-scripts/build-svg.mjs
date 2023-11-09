@@ -45,7 +45,7 @@ export async function buildSVG() {
   let markup = await generateContent('./icons/svg')
 
   // Write SVG file
-  await writeToFile(markup, './icons/icon-sprites.svg')
+  await writeToFile(markup, './icons/ds-icon-sprites.svg')
 
   console.log('Done 👍')
 }
